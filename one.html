@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    
+    //<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+    
+    <title>ACM-CEG Student Chapter</title>
+</head>
+<style>
+    .modal-content{
+        background-image: url("img/bg3.jpg");
+    }
+    ul{
+        list-style: none;
+    }
+    .ca:hover{
+        transform: scale(1.2);
+
+    }
+</style>
+
+<body background="img/bg3.jpg">
+    <nav class="navbar navbar-expand-sm top-nav-collapse navbar-color fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-expanded="false">
+                <span ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="24" height="24"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,14.33333v14.33333h172v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,143.33333v14.33333h172v-14.33333z"></path></g></g></svg></span>
+            </button>
+                       <a class="navbar-brand ml-auto" href="./index.html"><img src='img/LOGO_white.png' height="50vw" width="auto"  alt="logo"/></a>
+            <div class="collapse navbar-collapse ml-auto" id="Navbar">
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item"><a id="home-btn" class="nav-link active" href="#" data-toggle="collapse" data-target="#Navbar"> Home  </a></li>
+                   
+                    <li class="nav-item"><a class="nav-link" href="#" id="event" data-toggle="collapse" data-target="#Navbar"> Events  </a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#" id="program" data-toggle="collapse" data-target="#Navbar"> Programs  </a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#" id="team" data-toggle="collapse" data-target="#Navbar"> Team  </a></li>                    
+                    <li class="nav-item"><a class="nav-link"  href="#"  id="contact" data-toggle="collapse" data-target="#Navbar"> Contact  </a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="teamModal" class="modal fade " role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Meet The Team</h4>
+                    <button type="button" class="close" id="cross" data-dismiss="modal" >
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body" style="font-family: cursive;">
+                    <section class="our-webcoderskull padding-lg">
+                        <div class="container">
+                          
+                          <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/IshS.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ""><i>Ishwarya S</i></p>
+                                  <p style="font-size: medium;">Chairperson</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li>
+                                   
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/IshR.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Ishwarya R</p>
+                                  <p style="font-size: medium;">Vice Chairperson</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li> </ul>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/Sanjay.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Naga Sanjay</p>
+                                  <p style="font-size: medium;">Treasurer</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li></ul>
+                                </div>
+                             </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/harini.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">V Harini</a></p>
+                                  <p style="font-size: medium;">Secretary</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li></ul>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/Gokul.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Gokul K </a></p>
+                                  <p style="font-size: medium;">Membership Chairperson</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li></ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/Mona.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Mohanaruba</a></p>
+                                  <p style="font-size: medium;">Web Master</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success role="button">View on LinkedIn</a></li></ul>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/Divya.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size:large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Divya S</p>
+                                  <p style="font-size: medium;">Public relations & Event planning</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li> </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="cnt-block equal-hight" style="height: 349px;">
+                                  <figure><img src="img/ash.jpg" class="img-responsive" alt=""></figure>
+                                  <p style="font-size: medium;">Ashvathe S</p>
+                                  <p>Social Media Head</p>
+                                  <ul class="follow-us clearfix">
+                                    <li><a href="#" class="btn btn-success" role="button">View on LinkedIn</a></li></ul>
+                                </div>
+                            </div>
+                          </div>
+    
+                          </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>  
+            </div>
+        </div>
+    </div>
+        
+    <div id="contactModal" class="modal fade " role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Info</h4>
+                        <button type="button" class="close" id="cross" data-dismiss="modal" >
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row ">
+                            <div class="col-12">
+                               <h5 style="font-weight: normal; font-size: 20px;">If you have any queries reach us at</h5>
+                               <br>
+                               <div class="col-10 col-sm-6 offset-sm-1">
+                                    <h5 style="font-weight: normal; font-size: 15px;">Map of our Location</h5>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2417.2340192334887!2d80.23423290151516!3d13.013085405323745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679fd80e657f%3A0x9727dde0ba49c84e!2sAnna%20University%2C%20Chennai!5e0!3m2!1sen!2sin!4v1588914865725!5m2!1sen!2sin" width="300" height="400" frameborder="0" style="border:0;" allowfullscreen="no" aria-hidden="false" tabindex="0" style="padding-left: 20px;"></iframe>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="row " style="padding-top: 20px;"> 
+                            <div class="col-12 col-sm-10 offset-sm-1">
+                                <h5 style="font-weight: normal; font-size: 15px;">Mail us at</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-12 col-sm-5 offset-sm-1 ">
+                                    <i class="fa fa-envelope"></i> : <a href="mailto:acmceg2019@gmail.com" class="text-white">acmceg2019@gmail.com</a>
+                                </div>
+                                <div class="col-12 col-sm-5 offset-sm-1">
+                                    <div class="btn-group" role="group">
+                                        <a role="button" class="btn btn-success" href="mailto:acmceg2019@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div id="eventModal" class="modal fade " role="dialog" >
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content modal-popout-bg" style="background-image:url('img/bg3.jpg')">
+                <div class="modal-header">
+                    <h4 class="modal-title">Events</h4>
+                    <button type="button" class="close" id="cross" data-dismiss="modal" >
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body" id="one">
+                   <div class="row row-content">
+                       <div class="col-8">
+                            <div class="row">
+                                <h3 class="col-12 col-sm-10 offset-sm-1">
+                                        CODHER
+                                </h3>
+                            </div>
+                            <div class="row">
+                                    <p class="col-12 col-sm-10 offset-sm-1">
+                                        An all-Women's hackathon   
+                                    </p>
+                            </div>
+                            <a role="button" id = "codher-btn" class="btn btn-primary col-12 col-sm-4 offset-sm-1" href="https://www.acmceg.com/codher.html"> Know more<i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        <div class="col-8">
+                        <div class="row">
+                            <h3 class="col-12 col-sm-10 offset-sm-1">
+                                 PRODIGY
+                            </h3>
+                        </div>
+                        <div class="row">
+                             <p class="col-12 col-sm-10 offset-sm-1">
+                                 A program to create an interest on Computer Science among school children  
+                             </p>
+                             
+                         </div>
+                         <a role="button" id="prodigy-btn" class="btn btn-primary col-12 col-sm-4 offset-sm-1 rounde" href="#"> Know more<i class="fa fa-angle-double-right"></i></a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="programModal" class="modal fade " role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Programs</h4>
+                        <button type="button" class="close" id="cross" data-dismiss="modal" >
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row row-content">
+                           <div class="col-8">
+                                <div class="row">
+                                    <h3 class="col-12 col-sm-10 offset-sm-1">
+                                            C.O.D.E
+                                    </h3>
+                                </div>
+                                <div class="row">
+                                        <p class="col-12 col-sm-10 offset-sm-1">
+                                            An Intern preparation program for Grey and Purple Tags.
+                                        </p>
+                                </div>
+                                <a role="button" id="code-btn" class="btn btn-primary col-12 col-sm-4 offset-sm-1" href="#"> Know more<i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                            <div class="col-8">
+                            <div class="row">
+                                <h3 class="col-12 col-sm-10 offset-sm-1">
+                                     Head First
+                                </h3>
+                            </div>
+                            <div class="row">
+                                 <p class="col-12 col-sm-10 offset-sm-1">
+                                    Programming coaching for Red tags.  
+                                 </p>
+                                 
+                             </div>
+                             <a role="button" id="head-first-btn" class="btn btn-primary col-12 col-sm-4 offset-sm-1" href="#"> Know more<i class="fa fa-angle-double-right"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id='home'>
+        <header >
+            <div class="container" >
+                <div class="row ">
+                    <div class="col-12 col-sm-8 offset-sm-2 text-center"> 
+                        <h1 style="color:white; font-weight: bold;padding-top: 100px;"><strong>Greetings from ACM-CEG!!</strong></h1>
+                    
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <div >
+            <div class="container ">
+                <div class="cont row row-content mt-50">
+                    <div class="col-12 col-sm-10 offset-sm-1" style="color:floralwhite">
+                        <div class="text-center mt-10" style="padding-top: 80px;" >
+                            <h2 ><blockquote class="blockquote" style="font-size: xx-large; font-weight: bolder; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><strong>Our Motive</strong></blockquote></h2>
+                            <h5><i id='motive'><q>We aim to motivate students to embark on a journey of learning and developing the tools of computer science and instilling in them a passion for computer science.We serve to clear the cluster and provide guidance to help them to achieve their goals</q></i></h5>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="row row-content mt-0 d-none d-md-block">
+                    <div class="col-12 col-sm-10 offset-sm-1" style="width: 100;padding-top: 0px;">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="border: none;">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner mt-0">
+                          <div class="carousel-item active">
+                                <img class="w-100" src="img/white1.jpg" style="opacity: 0.6;"> 
+                                <div class="carousel-caption text-center d-md-block">
+                                    <h5 >Summer Programs</h5>
+                                    <h6>C.O.D.E</h6>
+                                    <p style="color: black;">we aim to guide you for your intern and placement preparation by  providing usefull materials and conducting contests...</p>
+                                </div>
+                            </div>
+                          <div class="carousel-item">
+                            <img class="w-100 d-none d-md-block" class="w-100" src="img/white1.jpg" style="opacity: 0.6;"> 
+                            <div class="carousel-caption ">
+                              <h5>Summer Programs</h5>
+                              <h6>HEAD FIRST</h6>
+                              <p style="color: black;">We aim to improve your programming skills by providing helpfull materials and assigning mentors</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="w-100 d-none d-md-block" src="img/white1.jpg" style="opacity: 0.6;"> 
+                            <div class="carousel-caption">
+                              <h5>Main Events</h5>
+                              <h6>CODHER</h6>
+                              <p style="color: black;">Our motive is to launch a platform for women hackers to think, create, innovate and manifest their ideas through technology.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="w-100 d-none d-md-block" src="img/white1.jpg" style="opacity: 0.6;"> 
+                            <div class="carousel-caption">
+                              <h5>Main Events</h5>
+                              <h6>PRODIGY</h6>
+                              <p style="color: black;">A program to create an interest on Computer Science among school children</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="w-100 d-none d-md-block" src="img/white1.jpg" style="opacity: 0.6;"> 
+                            <div class="carousel-caption">
+                              <h5>Other Activities</h5>
+                              <h6>WEEKLIES</h6>
+                              <p style="color: black;">On college days we help students by conducting additional sessions on Python, ML &  DL, GitHub etc..</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    </div>  
+                    
+                </div>
+                <div class="row row-content mt-0 d-block d-md-none">
+                    <h3 class="card-header  text-white">At a Glance!</h3> <br />
+                    <div class="card-columns">
+                        <div class="card-body">
+                            <!-- Main Events -->
+                            <h4 class="card-header  text-white">MAIN EVENTS</h4> <br />
+                            <div class="card text-white " style="max-width: 18rem;"><center>
+                                <img class="card-img-top"  src="img/codher.jpeg" alt="codher">
+                                <div class="card-body">
+                                    <h5 class="card-title">Codher</h5>
+                                    <p class="card-text">"Platform for women hackers to think, create, innovate and manifest their ideas through technology!</p>
+                                </div></center>
+                            </div>
+                            <div class="card text-white " style="max-width: 18rem;"><center>
+                                <img class="card-img-top"  src="img/pro.jpeg" alt="prodigy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prodigy</h5>
+                                    <p class="card-text">"Program to create an interest on Computer Science among school children!</p>
+                                </div></center>
+                            </div>
+                            <!-- Summer programs -->
+                            <h4 class="card-header  text-white">THIS SUMMER!!</h4> <br />
+                            <div class="card text-white " style="max-width: 18rem;"><center>
+                                <img class="card-img-top" src="img/code.png"  alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">C.O.D.E</h5>
+                                    <p class="card-text">we aim to guide you for your intern and placement preparation by  providing usefull materials and conducting contests!!</p>
+                                </div></center>
+                            </div>
+                            <div class="card text-white " style="max-width: 18rem;"><center>
+                                <img class="card-img-top" src="img/head.jpeg"  alt="head first">
+                                <div class="card-body">
+                                    <h5 class="card-title">Head First</h5>
+                                    <p class="card-text">We aim to improve your programming skills by providing helpfull materials and assigning mentors!!</p>
+                                </div></center>
+                            </div>
+                            <!-- Weeklies -->
+                            <h4 class="card-header  text-white">Weekly classes</h4> <br />
+                            <div class="card text-white " style="max-width: 18rem;"><center>
+                                <img class="card-img-top" src="img/week.png"  alt="Weeklies">
+                                <div class="card-body">
+                                    <h5 class="card-title">WEEKLIES</h5>
+                                    <p class="card-text">"On college days we help students by conducting additional sessions on Python, ML &  DL, GitHub etc..</p>
+                                </div></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+    
+     <!-- Codher section -->
+
+    <div id="codher" style="display:none">
+        <header >
+            <div class="container" >
+                <div class="row  mt-5">
+                    <div class="col-12 col-sm-8 offset-sm-3"> 
+                        <h1 style="color:beige"><strong>CODHER</strong></h1>                    
+                    </div> 
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Prodigy section -->
+
+    <div id="prodigy" style="display:none">
+        <header >
+            <div class="container" >
+                <div class="row  mt-5">
+                    <div class="col-12 col-sm-8 offset-sm-3"> 
+                        <h1 style="color:beige"><strong>PRODIGY</strong></h1>                    
+                    </div> 
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Code section -->
+
+    <div id="code" style="display:none">
+        <header >
+            <div class="container" >
+                <div class="row  mt-5">
+                    <div class="col-12"> 
+                        <h1 style="color:floralwhite">
+                            <center>
+                            <strong>C.O.D.E</strong>
+                            </center>
+                        </h1>
+                        <h3 style="color:floralwhite">
+                            <center><strong>Create . Organize . Develop . Enhance</strong></center>
+                        </h3>
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <div>
+            <div class="container">
+            <div class="cont row row-content">
+                <div class="col-12 col-sm-10 offset-sm-1" style="color:floralwhite">
+                    <div class="text-center" >
+                        <h5 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        <i><blockquote class="blockquote">Intern and Placement Preparation</blockquote></i></h5>
+                    </div>
+                </div>
+                <!-- features -->
+                <div class="row row-content">
+                    <div class="features col-12 ">
+                    <br>
+                        <h3 class="card-header  text-white">Program Features</h3> <br />
+                        <div class="card-columns">
+                            <div class="card-body">
+                                <!-- guided schedule -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top"  src="img/guided_schedule.png" alt="guided schedule">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Guided Schedule</h5>
+                                        <p class="card-text">"A plan without a goal is just a wish"<br />We will give mentees a complete schedule which contains on-day tasks!</p>
+                                    </div></center>
+                                </div>
+                                <!-- Personalized mentoring -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/p_m.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Personalized mentoring</h5>
+                                        <p class="card-text">Students will be guided by mentors in person.</p>
+                                    </div></center>
+                                </div>
+                                <!-- Real-world problem solving -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/r_p_s.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Real-world problem solving</h5>
+                                        <p class="card-text">"coming together is a beginning<br>keeping together is progress<br>working together is success"<br>We will work together in breaking all the obstacles a student has!</p>
+                                    </div></center>
+                                </div>
+                                <!-- Mock interviews -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/m_i_3.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mock interviews</h5>
+                                        <p class="card-text">To overcome interview fear and pressure,mock interviews will be conducted.<br>Change is the end result of all true learning.<br>-Leo Buscaglia</p>
+                                    </div></center>
+                                </div>
+                                <!-- Webinars -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/webinar.jpg"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Webinars</h5>
+                                        <p class="card-text">We will conduct web seminars to create a classroom atmosphere for the students!</p>
+                                    </div></center>
+                                </div>
+                                <!-- Coming soon -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/cs2.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">And Much More</h5>
+                                        <p class="card-text">Stay Tuned. More on the way...</p>
+                                    </div></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </div>
+
+    <!-- Head First section -->
+
+    <div id="head-first" style="display:none">
+        <header >
+            <div class="container" >
+                <div class="row  mt-5">
+                    <div class="col-12"> 
+                        <center><h1 style="color:floralwhite"><strong>HEAD FIRST</strong></h1></center>
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <div>
+            <div class="container">
+            <div class="cont row row-content">
+                <div class="col-12 col-sm-10 offset-sm-1" style="color:floralwhite">
+                    <div class="text-center" >
+                        <h5 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        <i><blockquote class="blockquote">Exclusively for first years !!!</blockquote></i></h5>
+                    </div>
+                </div>
+                <!-- features -->
+                <div class="row row-content">
+                    <div class=" features col-12 ">
+                        <br>
+                        <h3 class="card-header  text-white">Program Features</h3><br />
+                        <div class="card-columns">
+                            <div class="card-body">
+                                <!-- Enhance programming skills -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/prog_skills.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Enhance programming skills</h5>
+                                        <p class="card-text">Everything comes by practice.We will give mentees programs continually and help them to solve those.</p>
+                                    </div></center>
+                                </div>
+                                <!-- guided schedule -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top"  src="img/guided_schedule.png" alt="guided schedule">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Guided Schedule</h5>
+                                        <p class="card-text">We will give mentees a to-do list with all the resources they have to learn from.</p>
+                                    </div></center>
+                                </div>
+                                <!-- Personalized mentoring -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/p_m.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Personalized mentoring</h5>
+                                        <p class="card-text">"Mentoring is a brain to pick,an ear to listen and push into the right direction"<br>Every individual mentee will be guided by mentors in person!</p>
+                                    </div></center>
+                                </div>
+                                <!-- Enhancing problem solving skills -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/ps.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Enhancing problem solving skills</h5>
+                                        <p class="card-text">We will together identify and understand the problem,think about all the possible ways and solve it!</p>
+                                    </div></center>
+                                </div>
+                                <!-- Regular tests -->
+                                <div class="card text-white " style="max-width: 18rem;"><center>
+                                    <img class="card-img-top" src="img/rt.png"  alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Regular tests</h5>
+                                        <p class="card-text">Regular tests will be conducted to help you test your improvements.</p>
+                                    </div></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </div>
+
+
+    
+
+    <footer >
+        <div class="container">
+            
+            <div class="row mb-3 mt-5">  
+            
+                <p class="col-10 offset-2 col-sm-3 offset-sm-2 text-white" style="font-size: larger;">You can find us also at</p>
+                <div class="col-sm-7">
+                    <div class="text-center">
+                        
+                        <a class="btn btn-social-icon btn-facebook btn-rounded" href="https://www.facebook.com/acm.ceg/"><img src="https://img.icons8.com/fluent/30/000000/facebook-new.png"/></a>
+                        <a class="btn btn-social-icon btn-linkedin btn-rounded " href="https://in.linkedin.com/in/acm-ceg"><img src="https://img.icons8.com/color/30/000000/linkedin.png"/></a>
+                        <a class="btn btn-social-icon btn-instagram btn-rounded" href="https://www.instagram.com/acm_ceg"><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/></a>
+                        <a class="btn btn-social-icon btn-twitter btn-rounded " href="https://twitter.com/AcmCeg"><img src="https://img.icons8.com/color/30/000000/twitter.png"/></a>
+                        <a class="btn btn-social-icon btn-telegram btn-rounded" href="https://t.me/acmceg"><img src="https://img.icons8.com/color/30/000000/telegram-app.png"/></a>
+                    </div>
+                </div>
+           </div>
+           
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script>
+    $(document).ready(function(){
+        $("body").scroll(function(){
+        $("#navi").css("background-color", "yellow");
+        });
+    });
+
+    $('#team').click(function(){
+        $('#teamModal').modal('show');
+    });
+
+    $('#contact').click(function(){
+        $('#contactModal').modal('show');
+    });
+
+    $('#event').click(function(){
+        $('#eventModal').modal('show');
+    });
+
+    $('#program').click(function(){
+        $('#programModal').modal('show');
+    });
+
+    active = '#home';
+
+    $('#home-btn').click(()=>{
+        $(active).hide();
+        $('#home').show();
+        active = '#home';
+    });
+    /*
+    $('#codher-btn').click(()=>{
+        $(active).hide();
+        $('#codher').show();
+        active = '#codher';
+        $('#eventModal').modal('hide');
+    });
+
+    $('#prodigy-btn').click(()=>{
+        $(active).hide();
+        $('#prodigy').show();
+        active = '#prodigy';
+        $('#eventModal').modal('hide');
+    });
+    */
+    $('#code-btn').click(()=>{
+        $(active).hide();
+        $('#code').show();
+        active = '#code';
+        $('#programModal').modal('hide');
+    });
+
+    $('#head-first-btn').click(()=>{
+        $(active).hide();
+        $('#head-first').show();
+        active = '#head-first';
+        $('#programModal').modal('hide');
+    });
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if(scroll < 100){
+            $('.fixed-top').css('background', 'transparent');
+        } else{
+            $('.fixed-top').css('background', '#000');
+        }
+    });
+    $('.navbar-toggler, .nav-link').click(()=>{
+        var open = $('.navbar-toggler').hasClass("collapsed");
+        if(open == false){
+            $('.fixed-top').css('background', '#000');
+        } else {
+            $('.fixed-top').css('background', '#000');
+        }
+    })
+    </script>
+    
+    </body>
+
+</html>
